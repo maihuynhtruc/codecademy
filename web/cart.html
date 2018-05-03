@@ -1,31 +1,149 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
-            <title>Giỏ hàng </title>
-        </head>
-        <body>
-            <div class="content">
-                <div class="titleCart flex flex-wrap">
-                    <div class="arrow  "><button><--</button></div>
-                    <div class="cart bg">Giỏ hàng</div>
-                </div>
-                <div class="centerCart">
-                    <div class="allPro">
-                        <div class="img"><img src="./img/image1.jpeg" </div>
-                        <div class="right">
-                            <div class="name">Dầu gấc</div>
-                            <div class="num"><input value="1"/></div>
-                            <div class="price">Giá: 50.000 VND</div>
-                        </div>
+<html ⚡ lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <title>Iframer: PDP</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/tachyon.css">
+    <style>
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+        html{
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+        .top-06{
+            top: .6rem;
+        }
+        .mw-fit-content{
+            max-width: fit-content;
+        }
+        .h12-5{
+            height: 12.5rem;
+        }
+        .w-fit-content{    width: fit-content;}
+        .min-h-4 { min-height: 8rem}
+
+        /*Not Small*/
+        @media screen and (min-width: 30em) {
+            .min-h-auto-ns { min-height: auto}
+            .ml-12-ns{ margin-left: 12rem}
+            .w-12-ns{ width: 12rem}
+            .h-12-ns{ height: 12rem}
+        }
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+</head>
+<body>
+    <header class="">
+        <!--Banner-->
+        <div id="banner" class="bg-green #4E9B13">
+            <div class="mw9 flex center f2">
+                <div class="pl2 pl3-l pr2 pv2 flex justify-center yellow">
+                    <span class="b lh-title dn db-ns">iFarmer</span>
+                    <i class="fab fa-d-and-d lh-title dib"></i>
+                    <div class="dn db-l pl3">
+                        <span class="f4 f">Tươi & chất</span>
                     </div>
-                    <div class="ship">Miễn phí vận chuyển với đơn hàng trên 200 VND</div>
                 </div>
-                <div class="endCart">
-                    <div class="sum">Tổng tiền: 50.000 VND</div>
-                    <div class="buy"> <button>Mua </button></div>
+                <div class="flex-grow-1 pa2 relative">
+                    <input class="db w-100 br3 pl3 pr5">
+                    <i class="fas fa-search green absolute top-06 right-1 lh-title"></i>
+                </div>
+                <div class="pv2 pr2 pr3-l">
+                    <i class="fas fa-shopping-cart white lh-title"></i>
+                </div>
+                <div class="dn-l pv2 pl2 pr2">
+                    <i class="fas fa-align-justify white lh-title"></i>
                 </div>
             </div>
-        </body>
-    </html>
+        </div>
+
+        <!--Mega menu-->
+        <div id="mega-menu" class="bg-light-green dn db-l">
+            <div  class="mw9 flex center f3 flex-wrap blue">
+                <div class="pa1 pa3-l hover-bg-green lh-title">
+                    <i class="fas fa-baseball-ball "></i>
+                    <span>Rau củ</span>
+                </div>
+                <div class="pa1 pa3-l hover-bg-green lh-title">
+                    <i class="fas fa-band-aid "></i>
+                    <span>Trái cây</span>
+                </div>
+                <div class="pa1 pa3-l hover-bg-green lh-title">
+                    <i class="fas fa-balance-scale "></i>
+                    <span>Gạo & Hạt</span>
+                </div>
+                <div class="pa1 pa3-l hover-bg-green lh-title">
+                    <i class="fas fa-bath "></i>
+                    <span>Tinh dầu</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mw9 center pa2 pa3-l">
+
+        <!--Title-->
+        <amp-accordion class="mt3">
+        <div class="contentCart">
+
+            <h1 class="f4 mv2 f3-l" style=" color:black"">Giỏ hàng</h1>
+
+
+        <!--Start rating-->
+
+        <!--ATF-->
+            <div class="arrow  "></div>
+            <div class="flex flex-wrap " style="background-color: #4E9B13; border-radius:5px; padding: 8px;color:white ">
+                <div class="w-20 tc-l ">Hình ảnh</div>
+                <div class="w-20 tc-l ">Tên sản phẩm</div>
+                <div class="w-20 tc-l ">Số lượng</div>
+                <div class="w-20 tc-l ">Giá</div>
+                <div class="w-20 tc-l ">Xóa</div>
+            </div>
+            <div class="centerCart black">
+                <div class="flex flew-wrap pa2 h-25-l">
+                        <div class="img w-20 tc-l"><img style="width: 100px; height: 95px; " src="img/image1.jpeg"/> </div>
+                        <div class="name w-20 tc-l mv4 ">Dầu gấc</div>
+                        <div class="num w-20 tc-l mv4 "> <button> - </button> <input style="width:30px; text-align: center" value="1"/> <button>+</button> </div>
+                        <div class="price w-20 tc-l mv4 ">Giá: 50.000 VND</div>
+                        <div class="w-20 tc-l mv4 "><button> X </button></div>
+                </div>
+                <hr style=" color: #a1a1a1; "/>
+                <div class="flex flew-wrap pa2 h-25-l">
+                    <div class="img w-20 tc-l"><img style="width: 100px; height: 95px; " src="img/image1.jpeg"/> </div>
+                    <div class="name w-20 tc-l mv4 ">Dầu gấc</div>
+                    <div class="num w-20 tc-l mv4 "> <button> - </button> <input style="width:30px; text-align: center" value="1"/> <button>+</button> </div>
+                    <div class="price w-20 tc-l mv4 ">Giá: 50.000 VND</div>
+                    <div class="w-20 tc-l mv4 "><button> X </button></div>
+                </div>
+                <hr style=" color: #a1a1a1; "/>
+                <div class="flex flew-wrap pa2 h-25-l">
+                    <div class="img w-20 tc-l"><img style="width: 100px; height: 95px; " src="img/image1.jpeg"/> </div>
+                    <div class="name w-20 tc-l mv4 ">Dầu gấc</div>
+                    <div class="num w-20 tc-l mv4 "> <button> - </button> <input style="width:30px; text-align: center" value="1"/> <button>+</button> </div>
+                    <div class="price w-20 tc-l mv4 ">Giá: 50.000 VND</div>
+                    <div class="w-20 tc-l mv4 "><button> X </button></div>
+                </div>
+                <hr style=" color: #a1a1a1; "/>
+                <div class="subtotal " style="float:right" >
+                    <div class="pa1-l"> Thành tiền: 150 000 VND  </div>
+                    <div class="pa1-l"> Phí vận chuyển: 5 000 VND</div>
+                    <div class="pa1-l"> Tổng cộng: 155 000 VND </div>
+                    <div class="pa1-l"><img width="50px" height="38px" src="img/car.jpeg" /> Miễn phí vận chuyển với đơn hàng trên 200 nghìn </div>
+                    <div class="pa1-l"> <button style="background-color:#4E9B13; border-radius:5px; padding: 8px;color:white ">Thanh toán</button></div>
+            </div>
+                <div style="clear:both"></div>
+        </div>
+        </amp-accordion>
+        <!--BTF-->
+    </main>
+    <footer class="bg-blue h3">
+
+    </footer>
+</body>
+</html>
