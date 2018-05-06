@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <title>Xác nhận đơn hàng</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/tachyon.css">
+    <style>
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+        html{
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+        .top-06{
+            top: .6rem;
+        }
+        .mw-fit-content{
+            max-width: fit-content;
+        }
+        .h12-5{
+            height: 12.5rem;
+        }
+        .w-fit-content{    width: fit-content;}
+        .min-h-4 { min-height: 8rem}
+
+        /*Not Small*/
+        @media screen and (min-width: 30em) {
+            .min-h-auto-ns { min-height: auto}
+            .ml-12-ns{ margin-left: 12rem}
+            .w-12-ns{ width: 12rem}
+            .h-12-ns{ height: 12rem}
+        }
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+</head>
+<body>
+<header class="">
+    <!--Banner-->
+    <div id="banner" class="bg-green">
+        <div class="mw9 flex center f2">
+            <div class="pl2 pl3-l pr2 pv2 flex justify-center yellow">
+                <span class="b lh-title dn db-ns">iFarmer</span>
+                <i class="fab fa-d-and-d lh-title dib"></i>
+                <div class="dn db-l pl3">
+                    <span class="f4 f">Tươi & chất</span>
+                </div>
+            </div>
+            <div class="flex-grow-1 pa2 relative">
+                <input class="db w-100 br3 pl3 pr5">
+                <i class="fas fa-search green absolute top-06 right-1 lh-title"></i>
+            </div>
+            <div class="pv2 pr2 pr3-l">
+                <i class="fas fa-shopping-cart white lh-title"></i>
+            </div>
+            <div class="dn-l pv2 pl2 pr2">
+                <i class="fas fa-align-justify white lh-title"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Mega menu-->
+    <div id="mega-menu" class="bg-light-green dn db-l">
+        <div  class="mw9 flex center f3 flex-wrap blue">
+            <div class="pa1 pa3-l hover-bg-green lh-title">
+                <i class="fas fa-baseball-ball "></i>
+                <span>Rau củ</span>
+            </div>
+            <div class="pa1 pa3-l hover-bg-green lh-title">
+                <i class="fas fa-band-aid "></i>
+                <span>Trái cây</span>
+            </div>
+            <div class="pa1 pa3-l hover-bg-green lh-title">
+                <i class="fas fa-balance-scale "></i>
+                <span>Gạo & Hạt</span>
+            </div>
+            <div class="pa1 pa3-l hover-bg-green lh-title">
+                <i class="fas fa-bath "></i>
+                <span>Tinh dầu</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="mw9 center pa2 pa3-l">
+    <div class="w-50-l w-100 center" style="background-color: #4E9B13;text-align:center; padding: 12px;color:white ">
+        Giỏ hàng  >  Thông tin khách hàng  >   Xác nhận
+    </div>
+
+    <!--Title-->
+<h1 class="f4 mv2 f3-l ">Xác nhận đơn hàng</h1>
+
+    <!--Start rating-->
+
+    <!--ATF-->
+
+
+       <div class="pa2">
+           <div class="pa1">Quý Khách {hoten} đã đặt hàng thành công.</div>
+             <div class="pa1 flex">
+             <div class="pa1">Số ĐT:</div><div>{soDT} </div>
+          </div>
+          <div class="pa1 flex">
+             <div class="pa1">Địa chỉ:</div><div> {diaChi} </div>
+          </div>
+            <div class="pa1">Chúng tôi sẽ gửi xác nhận đến  Email: {email} của Quý Khách. </div>
+            <div class="pa1">Đơn vị vận chuyển: Viettel</div>
+            <div class="pa1">Chúng tôi sẽ giao hàng cho Quý Khách trong vòng 7 ngày làm việc. </div>
+            <div class="pa1" style="float:right;" >
+                <button style="background-color: #4E9B13;border-radius:5px;text-align:center; padding: 8px;color:white">Quay lại</button>
+                <button style="background-color: #4E9B13;border-radius:5px;text-align:center; padding: 8px;color:white">Tiếp tục mua hàng</button>
+       </div>  <div style="clear: right"></div>
+    </div>
+
+    <!--BTF-->
+
+</main>
+<footer class="bg-blue h3">
+
+</footer>
+</body>
+</html>
